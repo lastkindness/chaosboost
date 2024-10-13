@@ -1,0 +1,16 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Telegram">
+<g id="Oval-path" filter="url(#filter0_b_0_489)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32Z" fill="#0C1716"/>
+</g>
+<path id="Shape" fill-rule="evenodd" clip-rule="evenodd" d="M12.1221 19.4948L18.5701 24.2586C19.3059 24.6646 19.837 24.4544 20.0203 23.5755L22.6449 11.2071C22.9137 10.1297 22.2343 9.6411 21.5304 9.96068L6.11836 15.9035C5.06635 16.3254 5.07248 16.9124 5.9266 17.1739L9.88167 18.4083L19.0381 12.6316C19.4703 12.3695 19.867 12.5105 19.5414 12.7994" fill="#97F312"/>
+</g>
+<defs>
+<filter id="filter0_b_0_489" x="-20" y="-20" width="72" height="72" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImageFix" stdDeviation="10"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_0_489"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_0_489" result="shape"/>
+</filter>
+</defs>
+</svg>

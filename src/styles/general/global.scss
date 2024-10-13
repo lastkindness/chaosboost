@@ -1,0 +1,95 @@
+@use 'styles/utils';
+@use 'styles/general/variables';
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: clip;
+    font-size: 62.5%;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1230px;
+}
+
+.main-wrapper {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main {
+    flex: 1 1 0;
+}
+
+.hidden {
+    display: none;
+}
+
+body {
+    overflow-x: clip;
+}
+
+html.disable-scroll {
+    overflow: clip;
+
+    body {
+        overflow: clip;
+    }
+}
+
+.swiper,
+.swiper-wrapper,
+.swiper-slide {
+    box-sizing: border-box !important;
+}
+
+.content {
+    p + p {
+        margin-top: 15px;
+    }
+
+    @media only screen and (max-width: utils.$xl) {
+        p + p {
+            margin-top: 12px;
+        }
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+
+    &::-webkit-scrollbar {
+        width: 4px;
+        height: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+        border-radius: 4px;
+        background: variables.$clr_main-background;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: variables.$clr_accent;
+        border-radius: 4px;
+    }
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    max-width: 100vw;
+    font-family: 'Poppins';
+    font-style: normal;
+    background: variables.$clr_main-background;
+    overflow-x: hidden;
+    cursor: url("../../assets/icons/icon-cursor.svg"), auto;
+
+    &.modal-opened {
+        overflow: hidden;
+    }
+}

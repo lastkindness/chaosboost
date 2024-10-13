@@ -1,0 +1,12 @@
+@use 'general/_preflight.css';
+@use 'general/reset';
+@use 'general/variables';
+@use 'general/fonts';
+@use 'general/global';
+
+// Page
+@use 'layout/header/header';
+@use 'layout/footer/footer';
+
+// Components
+@use "components/component-example/component-example";

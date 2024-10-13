@@ -1,0 +1,18 @@
+# Dist
+dist
+build
+
+# env
+.env.local
+.vscode
+
+# npm
+node_modules
+package-lock.json
+
+# Tests
+test.*
+
+# temp
+_temp
+temp

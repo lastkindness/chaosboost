@@ -1,0 +1,16 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Facebook">
+<g id="Facebook_2" filter="url(#filter0_b_0_506)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z" fill="#0C1716"/>
+</g>
+<path id="Path" fill-rule="evenodd" clip-rule="evenodd" d="M17.3398 25.3354V16.6305H19.7428L20.0612 13.6308H17.3398L17.3439 12.1294C17.3439 11.347 17.4183 10.9278 18.542 10.9278H20.0442V7.92773H17.6409C14.7542 7.92773 13.7382 9.38293 13.7382 11.8301V13.6311H11.9388V16.6309H13.7382V25.3354H17.3398Z" fill="#97F312"/>
+</g>
+<defs>
+<filter id="filter0_b_0_506" x="-20" y="-20" width="72" height="72" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImageFix" stdDeviation="10"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_0_506"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_0_506" result="shape"/>
+</filter>
+</defs>
+</svg>

@@ -1,0 +1,16 @@
+extends layout/page
+
+block append head
+    link(href=require('./styles.scss'), rel='stylesheet')
+
+append main
+    section.section
+        h1 Test Commit 1
+        include components/component-example/component-example
+        h1 Test Commit 1
+        include components/component-example/component-example
+        h1 Test Commit 1
+        include components/component-example/component-example
+
+block append scripts
+    script(src=require('./main.js'))
