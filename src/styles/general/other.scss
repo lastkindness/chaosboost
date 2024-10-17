@@ -1,0 +1,12 @@
+@use 'styles/utils';
+@use 'styles/general/variables';
+
+a.wowhead-link {
+    span {
+        color: variables.$clr_accent;
+    }
+}
+
+.wowhead-tooltip-screen-caption {
+    display: none !important;
+}

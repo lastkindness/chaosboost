@@ -1,0 +1,65 @@
+@use 'styles/utils';
+@use 'styles/general/variables';
+@use 'styles/general/global';
+
+.btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 20px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.64px;
+  text-transform: uppercase;
+  color: variables.$clr_main-background;
+  background: variables.$clr_accent;
+  overflow: hidden;
+  border: none;
+  border-radius: variables.$border_radius_1;
+  cursor: pointer;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    cursor: pointer;
+    @extend %regular-transition;
+  }
+
+  &:hover {
+    &:after {
+      background: variables.$clr_background-14;
+    }
+  }
+
+  &:active {
+    &:after {
+      background: transparent;
+    }
+  }
+
+  &.has-icon {
+    & > img {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+      object-fit: contain;
+    }
+  }
+
+  &.small-btn {
+    padding: 13px 24px;
+  }
+
+  &.grey {
+    color: variables.$clr_text-1;
+    background: variables.$clr_grey-inputs;
+  }
+}

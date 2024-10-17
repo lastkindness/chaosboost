@@ -3,6 +3,8 @@
 @use 'general/variables';
 @use 'general/fonts';
 @use 'general/global';
+@use 'general/typo';
+@use 'general/other';
 
 // Page
 @use 'layout/header/header';
@@ -10,3 +12,8 @@
 
 // Components
 @use "components/component-example/component-example";
+@use "components/btn/btn";
+@use "components/search/search";
+@use "components/modal/modal";
+@use "components/form/form";
+@use "components/product-banner/product-banner";

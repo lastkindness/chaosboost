@@ -1,1 +1,267 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../assets/fonts/Poppins/Poppins-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../assets/fonts/Poppins/Poppins-ExtraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../assets/fonts/Poppins/Poppins-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../assets/fonts/Poppins/Poppins-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../assets/fonts/Poppins/Poppins-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../assets/fonts/Poppins/Poppins-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../assets/fonts/Poppins/Poppins-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../assets/fonts/Poppins/Poppins-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../assets/fonts/Poppins/Poppins-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../../assets/fonts/icomoon/icomoon.woff2');
+  src: url('../../assets/fonts/icomoon/icomoon.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-icon-add-to-cart-btn:before {
+  content: "\e900";
+}
+.icon-icon-arrow-2 .path1:before {
+  content: "\e901";
+  color: rgb(4, 10, 9);
+  opacity: 0.8;
+}
+.icon-icon-arrow-2 .path2:before {
+  content: "\e902";
+  margin-left: -1.03125em;
+  color: rgb(214, 218, 217);
+}
+.icon-icon-arrow-3 .path1:before {
+  content: "\e903";
+  color: rgb(25, 27, 27);
+}
+.icon-icon-arrow-3 .path2:before {
+  content: "\e904";
+  margin-left: -1.03125em;
+  color: rgb(127, 127, 127);
+}
+.icon-icon-calendar:before {
+  content: "\e905";
+}
+.icon-icon-cart:before {
+  content: "\e906";
+}
+.icon-icon-catalog-arrow:before {
+  content: "\e907";
+}
+.icon-icon-chat:before {
+  content: "\e908";
+}
+.icon-icon-checkout-btn:before {
+  content: "\e909";
+}
+.icon-icon-cursor:before {
+  content: "\e90a";
+}
+.icon-icon-games-catalog-link:before {
+  content: "\e90b";
+}
+.icon-icon-header-btn:before {
+  content: "\e90c";
+}
+.icon-icon-hover-cursor:before {
+  content: "\e90d";
+}
+.icon-icon-list-marker:before {
+  content: "\e90e";
+}
+.icon-icon-mail:before {
+  content: "\e90f";
+}
+.icon-icon-play:before {
+  content: "\e910";
+}
+.icon-icon-play-video .path1:before {
+  content: "\e911";
+}
+.icon-icon-play-video .path2:before {
+  content: "\e912";
+}
+.icon-icon-product-banner:before {
+  content: "\e913";
+}
+.icon-icon-product-list-marker:before {
+  content: "\e914";
+}
+.icon-icon-product-range-arrow:before {
+  content: "\e915";
+}
+.icon-icon-product-single-link .path1:before {
+  content: "\e916";
+  color: rgb(15, 15, 15);
+}
+.icon-icon-product-single-link .path2:before {
+  content: "\e917";
+  margin-left: -1em;
+  color: rgb(163, 163, 163);
+}
+.icon-icon-rating-star .path1:before {
+  content: "\e918";
+  color: rgb(151, 243, 18);
+}
+.icon-icon-rating-star .path2:before {
+  content: "\e919";
+  margin-left: -1.0419921875em;
+  color: rgb(4, 10, 9);
+}
+.icon-icon-search:before {
+  content: "\e91a";
+}
+.icon-icon-show-more:before {
+  content: "\e91b";
+}
+.icon-icon-slider-arrow:before {
+  content: "\e91c";
+}
+.icon-icon-support:before {
+  content: "\e91d";
+}
+.icon-icon-toggle-back-catalog .path1:before {
+  content: "\e91e";
+  color: rgb(192, 185, 185);
+}
+.icon-icon-toggle-back-catalog .path2:before {
+  content: "\e91f";
+  margin-left: -1.099609375em;
+  color: rgb(151, 243, 18);
+}
+.icon-icon-toggle-back-catalog .path3:before {
+  content: "\e920";
+  margin-left: -1.099609375em;
+  color: rgb(192, 185, 185);
+}
+.icon-icon-toggle-back-catalog .path4:before {
+  content: "\e921";
+  margin-left: -1.099609375em;
+  color: rgb(151, 243, 18);
+}
+.icon-icon-toggle-front-catalog .path1:before {
+  content: "\e922";
+  color: rgb(192, 185, 185);
+}
+.icon-icon-toggle-front-catalog .path2:before {
+  content: "\e923";
+  margin-left: -1.099609375em;
+  color: rgb(151, 243, 18);
+}
+.icon-icon-toggle-front-catalog .path3:before {
+  content: "\e924";
+  margin-left: -1.099609375em;
+  color: rgb(192, 185, 185);
+}
+.icon-icon-toggle-front-catalog .path4:before {
+  content: "\e925";
+  margin-left: -1.099609375em;
+  color: rgb(151, 243, 18);
+}
+.icon-icon-watch:before {
+  content: "\e926";
+}
+.icon-tiktok:before {
+  content: "\e927";
+}
+.icon-telegram:before {
+  content: "\e928";
+}
+.icon-pinterest:before {
+  content: "\e929";
+}
+.icon-google:before {
+  content: "\ea88";
+}
+.icon-google-drive:before {
+  content: "\ea8f";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-youtube:before {
+  content: "\ea9d";
+}
+.icon-twitch:before {
+  content: "\ea9f";
+}
+.icon-steam:before {
+  content: "\eaac";
+}

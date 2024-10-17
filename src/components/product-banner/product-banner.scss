@@ -1,0 +1,131 @@
+@use 'styles/utils';
+@use 'styles/general/variables';
+
+.product-banner {
+  position: relative;
+  padding: 60px;
+  border-radius: 40px;
+  overflow: hidden;
+
+  @media screen and (max-width: utils.$xl2) {
+    padding: 32px;
+  }
+
+  @media screen and (max-width: utils.$md) {
+    padding: 25px;
+  }
+
+  &.grid-look {
+    grid-row: 3 / 4;
+    grid-column: 1 / -1;
+  }
+
+  & > img {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .product-banner-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .top-row {
+      max-width: 396px;
+      margin-right: 15px;
+      margin-bottom: 15px;
+
+      @media screen and (max-width: utils.$sm) {
+        margin-left: 0;
+      }
+
+      span {
+        font-size: 33px;
+        font-weight: 600;
+        line-height: 1.2;
+        color: variables.$clr_white;
+
+        @media screen and (max-width: utils.$sm) {
+          font-size: 25px;
+        }
+      }
+    }
+
+    .bottom-row {
+      display: flex;
+      align-items: center;
+
+      @media screen and (max-width: utils.$sm) {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        width: 100%;
+      }
+
+      .regular-btn {
+        color: variables.$clr_main-background;
+      }
+
+      .product-banner-text {
+        display: none;
+
+        @media screen and (max-width: utils.$lg) {
+          display: block;
+        }
+
+        @media screen and (max-width: utils.$sm) {
+          margin-left: 0;
+        }
+
+        p {
+          color: variables.$clr_white;
+
+          &.text-top-row {
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 1.07;
+
+            img {
+              margin-right: 12px;
+            }
+          }
+
+          &.text-bottom-row {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.3;
+          }
+        }
+      }
+
+      .regular-btn {
+        @media screen and (max-width: utils.$xs) {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &.wide-banner {
+    .product-banner-content {
+      .bottom-row {
+        .product-banner-text {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+li {
+  &.product-banner-as-list-item {
+    grid-row: 3 / 4;
+    grid-column: 1 / -1;
+  }
+}

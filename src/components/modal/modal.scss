@@ -1,0 +1,218 @@
+@use 'styles/utils';
+@use 'styles/general/variables';
+
+.modal-window {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+  display: none;
+  overflow-y: auto;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 16px;
+  padding-right: 16px;
+  -webkit-overflow-scrolling: touch;
+
+  &.active {
+    display: flex;
+  }
+
+  .modal-window-inner-wrapper {
+    position: relative;
+    z-index: 101;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    width: 100%;
+  }
+
+  .modal-window-close-back {
+    position: fixed;
+    z-index: 102;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: variables.$clr_background-10;
+    backdrop-filter: blur(37px);
+  }
+
+  .modal-content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 140px);
+  }
+
+  .modal-window-close-cross {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: variables.$clr_grey-inputs;
+    cursor: pointer;
+
+    &:after, &:before {
+      content: '';
+      position: absolute;
+      top: 13px;
+      left: 7px;
+      width: 15px;
+      height: 2px;
+      background: variables.$clr_subtitle-1;
+      transform: rotate(45deg);
+    }
+
+    &:before {
+      transform: rotate(-45deg);
+    }
+  }
+
+  .modal-content {
+    position: relative;
+    z-index: 103;
+    max-width: 600px;
+    width: 100%;
+    padding: 40px;
+    color: variables.$clr_text-1;
+    background: variables.$clr_support-back-1;
+    border-radius: variables.$border_radius_2;
+  }
+
+  &.pop-up-modal {
+    .modal-content {
+      & > .modal-title {
+        margin-bottom: 20px;
+        display: block;
+      }
+
+      & > p {
+        margin-bottom: 30px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.4;
+      }
+    }
+
+    &.contact-socials-modal {
+      .modal-content {
+        max-width: 340px;
+
+        .contact-socials-list {
+          li {
+            margin-bottom: 12px;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+
+            a {
+              display: flex;
+              align-items: center;
+              padding: 13px 16px;
+              border-radius: 16px;
+              backdrop-filter: blur(7.5px);
+
+              img {
+                width: 25px;
+                height: 25px;
+                margin-right: 13px;
+                object-fit: contain;
+              }
+
+              span {
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 1;
+                color: variables.$clr_text-2;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.mini-cart-modal {
+      .modal-content {
+        position: relative;
+
+        .loader-overlay {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          z-index: 99;
+          top: 0;
+          left: 0;
+          display: none;
+          justify-content: center;
+          align-items: center;
+          background: rgba(0, 0, 0, .5);
+
+          img {
+            width: 200px;
+            height: 200px;
+            object-fit: contain;
+            object-position: center;
+          }
+
+          &.active {
+            display: flex;
+          }
+        }
+
+        & > .modal-title {
+          font-size: 32px;
+        }
+      }
+
+      .mini-cart-wrapper {
+        .mini-cart-order-listing {
+          @media only screen and (max-width: utils.$sm) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 10px;
+            row-gap: 10px;
+          }
+
+          @media only screen and (max-width: utils.$xs) {
+            grid-template-columns: 1fr;
+          }
+        }
+
+        .mini-cart-bottom-row {
+          display: flex;
+          margin-top: 24px;
+
+          @media only screen and (max-width: utils.$sm) {
+            flex-direction: column;
+          }
+
+          .mini-cart-total-amount {
+            margin-right: 20px;
+            padding-top: 5px;
+
+            bdi {
+              font-size: 32px;
+              font-weight: 400;
+              line-height: 1;
+              color: variables.$clr_text-1;
+            }
+          }
+
+          .regular-btn {
+            width: 100%;
+
+            @media only screen and (max-width: utils.$sm) {
+              margin-top: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
