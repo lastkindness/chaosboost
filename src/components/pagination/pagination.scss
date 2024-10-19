@@ -1,0 +1,106 @@
+@use 'styles/utils';
+@use 'styles/general/variables';
+@use 'styles/general/typo';
+
+li.pagination-as-list-item {
+  order: 5000;
+  grid-column: 1 / -1;
+  margin-top: 15px;
+}
+
+.pagination-listing {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+
+  &.ajax-btn-exist {
+    justify-content: space-between;
+
+    @media only screen and (max-width: utils.$md) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &.regular-look {
+    order: 5000;
+    grid-column: 1 / -1;
+    margin-top: 15px;
+
+    @media only screen and (max-width: utils.$md) {
+      margin-top: 8px;
+    }
+  }
+
+  &.woo-page-look {
+    justify-content: center;
+    margin-top: 40px;
+
+    @media only screen and (max-width: utils.$md) {
+      margin-top: 32px;
+    }
+  }
+
+  .pagination-wrapper {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    color: variables.$clr_subtitle-1;
+    background: variables.$clr_support-back-1;
+    border: 1px solid variables.$clr_border-1;
+    border-radius: variables.$border_radius_1;
+
+    @media only screen and (max-width: utils.$sm) {
+      padding: 10px 17px;
+      font-size: 15px;
+    }
+
+    a {
+      color: variables.$clr_subtitle-1;
+    }
+
+    .page-numbers {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+
+      @media only screen and (max-width: utils.$sm) {
+        width: 30px;
+        height: 30px;
+      }
+
+      &.current {
+        color: variables.$clr_text-5;
+        background: variables.$clr_accent;
+      }
+
+      &.next, &.prev {
+        padding: 0;
+      }
+
+      &.next {
+        margin-left: 25px;
+      }
+
+      &.prev {
+        margin-right: 25px;
+      }
+    }
+  }
+
+  .regular-btn {
+    padding: 20px 30px;
+
+    @media only screen and (max-width: utils.$md) {
+      margin-bottom: 24px;
+    }
+  }
+}

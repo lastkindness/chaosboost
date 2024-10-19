@@ -1,10 +1,6 @@
 @use 'styles/utils';
 @use 'styles/general/variables';
 
-%regular-transition {
-    transition: .3s;
-}
-
 html {
     scroll-behavior: smooth;
     overflow-x: clip;

@@ -42,28 +42,28 @@ h4,
     color: variables.$clr_text-1;
 }
 
-%font_text-1 {
+@mixin font_text-1 {
     font-size: 18px;
     font-weight: 400;
     line-height: 1.5;
     color: variables.$clr_text-1;
 }
 
-%font_text-2 {
+@mixin font_text-2 {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
     color: variables.$clr_subtitle-1;
 }
 
-%font_text-3 {
+@mixin font_text-3 {
     font-size: 14px;
     font-weight: 300;
     line-height: 1.5;
     color: variables.$clr_text-2;
 }
 
-%font_text-4 {
+@mixin font_text-4 {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;

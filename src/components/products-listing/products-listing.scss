@@ -1,0 +1,22 @@
+@use 'styles/utils';
+@use 'styles/general/variables';
+@use 'styles/general/typo';
+
+.products-listing {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 24px;
+  row-gap: 24px;
+
+  @media screen and (max-width: utils.$xl) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media screen and (max-width: 850px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (max-width: utils.$xs) {
+    grid-template-columns: 1fr;
+  }
+}

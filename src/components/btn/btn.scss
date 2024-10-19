@@ -30,7 +30,7 @@
     bottom: 0;
     background: transparent;
     cursor: pointer;
-    @extend %regular-transition;
+    @include utils.regular-transition;
   }
 
   &:hover {

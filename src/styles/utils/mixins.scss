@@ -1,5 +1,9 @@
 @use 'media' as *;
 
+@mixin regular-transition {
+    transition: .3s;
+}
+
 @mixin transition($property, $duration: 0.3s, $timing: ease-in-out) {
     transition-timing-function: $timing;
     transition-duration: $duration;
